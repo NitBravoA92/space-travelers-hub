@@ -1,4 +1,5 @@
 import AppLogo from './AppLogo';
+import MenuLink from './MenuLink';
 import '../assets/styles/Header.css';
 
 const Header = () => (
@@ -6,7 +7,9 @@ const Header = () => (
     <div className="container">
       <nav className="navbar">
         <AppLogo />
-        <ul id="navigation" />
+        <ul id="navigation">
+          <MenuLink url="/my-profile" pageName="My Profile" />
+        </ul>
       </nav>
     </div>
   </header>
