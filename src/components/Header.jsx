@@ -8,6 +8,7 @@ const Header = () => (
       <nav className="navbar">
         <AppLogo />
         <ul id="navigation">
+          <MenuLink url="/rockets" pageName="Rockets" />
           <MenuLink url="/my-profile" pageName="My Profile" />
         </ul>
       </nav>
