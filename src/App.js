@@ -1,8 +1,11 @@
+import { Routes, Route } from 'react-router-dom';
+import MyProfile from './views/MyProfile';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Space Travelers Hub</h1>
-    </div>
+    <Routes>
+      <Route path="my-profile" element={<MyProfile />} />
+    </Routes>
   );
 }
 
