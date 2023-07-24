@@ -9,15 +9,36 @@
     max-width: 720px;
   }
 
+  header {
+    padding: 1.1rem 1rem;
+  }
+
   .navbar {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .logo-image {
+    max-width: 55px;
+  }
+
+  #navigation {
+    gap: 2rem;
   }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+
+  .logo-image {
+    max-width: 70px;
+  }
+
+  .app-name {
+    font-size: 2rem;
+    white-space: nowrap;
   }
 }
 
