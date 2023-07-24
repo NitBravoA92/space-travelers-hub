@@ -161,10 +161,10 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Create My Profile view**
-- [ ] **Create Missions view**
-- [ ] **Create Rockets view**
-- [ ] **Use Redux to manage the states of rockets, missions**
+- [x] **Create My Profile view**
+- [x] **Create Missions view**
+- [x] **Create Rockets view**
+- [x] **Use Redux to manage the states of rockets, missions**
 - [ ] **Fetch data using the spaceX API**
 - [ ] **Add actions and other functionality to Join/Leave Missions**
 - [ ] **Add actions and other functionality to Reserve Rocket and Cancel Reservation**
