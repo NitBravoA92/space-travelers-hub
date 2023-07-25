@@ -33,6 +33,15 @@
   .missions-table {
     overflow: hidden;
   }
+
+  .rocket-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rocket-image {
+    width: 350px;
+  }
 }
 
 @media (min-width: 992px) {
