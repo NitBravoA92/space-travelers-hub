@@ -27,24 +27,26 @@ const rocketsSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(getAllRockets.pending, (state) => {
-        state.isLoading = true;
+        if (state.rockets.length === 0) state.isLoading = true;
       })
       .addCase(getAllRockets.fulfilled, (state, action) => {
-        state.isLoading = false;
         if (state.rockets.length === 0) {
+          state.isLoading = false;
           state.rockets = action.payload.map((rocket) => (
             {
               id: rocket.id,
               name: rocket.name,
-              type: rocket.type,
+              description: rocket.description,
               image: rocket.flickr_images[0],
             }
           ));
         }
       })
       .addCase(getAllRockets.rejected, (state, action) => {
-        state.isLoading = false;
-        state.error = action.payload;
+        if (state.rockets.length === 0) {
+          state.isLoading = false;
+          state.error = action.payload;
+        }
       });
   },
 });

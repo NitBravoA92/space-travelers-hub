@@ -89,6 +89,17 @@ main {
   border-color: #d73a5c;
 }
 
+.btn-blue {
+  color: #fff;
+  background-color: #0d6efd;
+}
+
+.btn-blue:active {
+  color: #0d6efd;
+  background-color: transparent;
+  border-color: #0d6efd;
+}
+
 .badge {
   font-size: 0.8rem;
   font-weight: 600;
