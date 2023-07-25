@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getAllRockets } from '../redux/rockets/rocketsSlice';
 import Layout from './Layout';
+import RocketsContent from '../components/RocketsContent';
+import '../assets/styles/Rocket.css';
 
 const Rockets = () => {
   const dispatch = useDispatch();
@@ -12,7 +14,11 @@ const Rockets = () => {
 
   return (
     <Layout>
-      <section id="rockets" />
+      <section id="rockets">
+        <div className="container">
+          <RocketsContent />
+        </div>
+      </section>
     </Layout>
   );
 };
