@@ -42,6 +42,13 @@
   .rocket-image {
     width: 350px;
   }
+
+  .services-content {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 3rem;
+  }
 }
 
 @media (min-width: 992px) {
