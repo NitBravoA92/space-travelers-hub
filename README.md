@@ -166,12 +166,13 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - [x] **Create Rockets view**
 - [x] **Use Redux to manage the states of rockets, missions**
 - [x] **Fetch data using the spaceX API**
+- [x] **Add CSS styles to the UI following the mobile first approach**
 - [x] **Add actions and other functionality to Reserve Rocket**
 - [x] **Add actions and other functionality to Cancel Reservation**
 - [x] **Add actions and other functionality to Join Missions**
 - [x] **Add actions and other functionality to Leave Missions**
-- [ ] **Create the list of My Missions and My Rockets in the My Profile view**
-- [ ] **Add CSS styles to the UI following the mobile first approach**
+- [ ] **Display the list of Missions Joined in the My Profile view**
+- [ ] **Display the list of Rockets reserved in the My Profile view**
 - [ ] **Create Unit tests using Jest and React testing library**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
