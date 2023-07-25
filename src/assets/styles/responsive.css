@@ -2,6 +2,10 @@
   .container {
     max-width: 540px;
   }
+
+  main {
+    padding: 10rem 0 3rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -24,6 +28,10 @@
 
   #navigation {
     gap: 2rem;
+  }
+
+  .missions-table {
+    overflow: hidden;
   }
 }
 
