@@ -50,6 +50,6 @@
   text-transform: uppercase;
 }
 
-.missions-table .active-member .mission-status {
+.missions-table .mission-status .active-member {
   text-transform: capitalize;
 }
