@@ -35,14 +35,21 @@ header {
   color: #e59011;
 }
 
+#navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav-item a {
-  color: #20cfe6;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #007bff;
   background-color: transparent;
 }
 
 .nav-item a.active,
 .nav-item a:hover {
-  color: #fff;
-  color: #007bff;
   text-decoration: underline;
 }
