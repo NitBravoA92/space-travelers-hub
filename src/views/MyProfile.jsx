@@ -1,8 +1,16 @@
 import Layout from './Layout';
+import ReservedRockets from '../components/ReservedRockets';
+import '../assets/styles/MyProfile.css';
 
 const MyProfile = () => (
   <Layout>
-    <section id="myProfile" />
+    <section id="myProfile">
+      <div className="container">
+        <div className="services-content">
+          <ReservedRockets />
+        </div>
+      </div>
+    </section>
   </Layout>
 );
 
