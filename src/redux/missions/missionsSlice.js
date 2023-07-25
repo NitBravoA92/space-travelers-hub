@@ -27,11 +27,11 @@ const missionsSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(getAllMissions.pending, (state) => {
-        state.isLoading = true;
+        if (state.missions.length === 0) state.isLoading = true;
       })
       .addCase(getAllMissions.fulfilled, (state, action) => {
-        state.isLoading = false;
         if (state.missions.length === 0) {
+          state.isLoading = false;
           state.missions = action.payload.map((mission) => (
             {
               mission_id: mission.mission_id,
@@ -42,8 +42,10 @@ const missionsSlice = createSlice({
         }
       })
       .addCase(getAllMissions.rejected, (state, action) => {
-        state.isLoading = false;
-        state.error = action.payload;
+        if (state.missions.length === 0) {
+          state.isLoading = false;
+          state.error = action.payload;
+        }
       });
   },
 });
