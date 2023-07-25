@@ -1,11 +1,15 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { addReservedMission } from '../redux/missions/missionsSlice';
+import { addReservedMission, LeaveMission } from '../redux/missions/missionsSlice';
 
 const MissionItem = ({ mission }) => {
   const dispatch = useDispatch();
   const handleClickAddReservedMission = () => {
     dispatch(addReservedMission(mission.mission_id));
+  };
+
+  const handleClickLeaveMission = () => {
+    dispatch(LeaveMission(mission.mission_id));
   };
 
   return (
@@ -17,6 +21,7 @@ const MissionItem = ({ mission }) => {
       </td>
       <td className="mission-join-button">
         <button type="button" className="btn btn-gray" onClick={handleClickAddReservedMission}>Join Mission</button>
+        <button type="button" className="btn btn-pink" onClick={handleClickLeaveMission}>Leave Mission</button>
       </td>
     </tr>
   );
