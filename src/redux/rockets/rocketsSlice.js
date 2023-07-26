@@ -17,10 +17,10 @@ export const getAllRockets = createAsyncThunk(actionName, async (thunkAPI) => {
 const initialState = {
   rockets: [],
   isLoading: false,
-  error: false,
+  error: null,
 };
 
-const rocketsSlice = createSlice({
+export const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
   reducers: {
