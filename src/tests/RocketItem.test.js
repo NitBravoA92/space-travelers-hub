@@ -14,6 +14,12 @@ describe("The RocketItem component", () => {
       reserved: true,
   };
 
+  test("renders into the DOM", () => {
+    const { tree } = renderWithProviders(<RocketItem rocket={testingData} />
+    );
+    expect(tree).toMatchSnapshot();
+  });
+
   test("renders correctly into the DOM showing the rocket title 'Falcon 1'", () => {
     renderWithProviders(<RocketItem rocket={testingData} />);
 
