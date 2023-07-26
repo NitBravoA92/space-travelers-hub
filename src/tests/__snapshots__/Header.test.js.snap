@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Header component renders into the DOM correctly 1`] = `
+Array [
+  <header>
+    <div
+      className="container"
+    >
+      <nav
+        className="navbar"
+      >
+        <a
+          className="logo"
+          href="/"
+        >
+          <img
+            alt="Space Travelers' Hub"
+            className="logo-image"
+            src="logo.png"
+          />
+          <span
+            className="app-name"
+          >
+            Space Travelers' Hub
+          </span>
+        </a>
+        <ul
+          id="navigation"
+        >
+          <li
+            className="nav-item"
+          >
+            <a
+              className={null}
+              href="/rockets"
+              onClick={[Function]}
+            >
+              Rockets
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className={null}
+              href="/missions"
+              onClick={[Function]}
+            >
+              Missions
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className={null}
+              href="/my-profile"
+              onClick={[Function]}
+            >
+              My Profile
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>,
+  ",",
+]
+`;
