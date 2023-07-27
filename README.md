@@ -1,5 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
+  <img src=".\src\assets\images\logo.png" alt="Space Travelers Hub" width="70"  height="auto" />
   <br/>
   <h1><b>Space Travelers' Hub</b></h1>
 </div>
@@ -11,6 +12,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+    - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Setup](#setup)
     - [Prerequisites](#prerequisites)
@@ -54,6 +56,15 @@
 - **SPA Approach**
 - **Responsive Design**
 - **Using Redux Toolkit for a global state management**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+### 🚀 Live Demo <a name="live-demo"></a>
+
+To see the application working live, you can click on the following link that contains the demo version:
+
+- [Space Travelers' Hub - Live Demo](https://space-travelers-hub-l1ba.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,7 +184,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - [x] **Add actions and other functionality to Leave Missions**
 - [x] **Display the list of Missions Joined in the My Profile view**
 - [x] **Display the list of Rockets reserved in the My Profile view**
-- [ ] **Create Unit tests using Jest and React testing library**
+- [x] **Create Unit tests using Jest and React testing library**
+- [ ] **Deploy the final version of the project and share Link Demo in the documentation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
