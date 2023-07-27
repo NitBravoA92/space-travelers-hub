@@ -6,14 +6,13 @@ import { renderWithProviders } from "../helpers/helper-for-test";
 
 describe("The Rockets component", () => {
   test("renders into the DOM correctly", () => {
-    renderWithProviders(
+    const {tree } = renderWithProviders(
       <MemoryRouter>
         <Rockets />
       </MemoryRouter>,
     );
 
-    const renderRocketsPageContainer = document.querySelector("#rockets");
-    expect(renderRocketsPageContainer).toBeInTheDocument();
+    expect(tree).toMatchSnapshot();
   });
 
   test("should render the navigation menu with the 'Rockets', 'Missions' and 'My Profile' Links", () => {
