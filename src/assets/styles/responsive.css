@@ -1,0 +1,73 @@
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  main {
+    padding: 10rem 0 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  header {
+    padding: 1.1rem 1rem;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo-image {
+    max-width: 55px;
+  }
+
+  #navigation {
+    gap: 2rem;
+  }
+
+  .missions-table {
+    overflow: hidden;
+  }
+
+  .rocket-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .rocket-image {
+    width: 350px;
+  }
+
+  .services-content {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .logo-image {
+    max-width: 70px;
+  }
+
+  .app-name {
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The AppLogo component renders into the DOM correctly 1`] = `
+<a
+  className="logo"
+  href="/"
+>
+  <img
+    alt="Space Travelers' Hub"
+    className="logo-image"
+    src="logo.png"
+  />
+  <span
+    className="app-name"
+  >
+    Space Travelers' Hub
+  </span>
+</a>
+`;
