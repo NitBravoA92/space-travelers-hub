@@ -1,5 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
+  <img src=".\src\assets\images\logo.png" alt="Space Travelers Hub" width="70"  height="auto" />
   <br/>
   <h1><b>Space Travelers' Hub</b></h1>
 </div>
@@ -173,7 +174,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - [x] **Add actions and other functionality to Leave Missions**
 - [x] **Display the list of Missions Joined in the My Profile view**
 - [x] **Display the list of Rockets reserved in the My Profile view**
-- [ ] **Create Unit tests using Jest and React testing library**
+- [x] **Create Unit tests using Jest and React testing library**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
