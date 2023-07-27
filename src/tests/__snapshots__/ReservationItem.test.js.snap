@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`The ReservationItem component renders into the DOM 1`] = `
-<li
-  className="reservation-item"
->
-  Falcon 1
-</li>
-`;
