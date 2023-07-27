@@ -2,8 +2,6 @@ import '@testing-library/jest-dom/extend-expect';
 import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
-import AppLogo from '../components/AppLogo';
-import MenuLink from '../components/MenuLink';
 import Header from '../components/Header';
 
 describe('The Header component', () => {
