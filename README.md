@@ -12,6 +12,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+    - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Setup](#setup)
     - [Prerequisites](#prerequisites)
@@ -55,6 +56,15 @@
 - **SPA Approach**
 - **Responsive Design**
 - **Using Redux Toolkit for a global state management**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+### 🚀 Live Demo <a name="live-demo"></a>
+
+To see the application working live, you can click on the following link that contains the demo version:
+
+- [Space Travelers' Hub - Live Demo](https://space-travelers-hub-l1ba.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
