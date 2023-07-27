@@ -11,17 +11,7 @@ describe('The Header component', () => {
     const headerComponent = renderer
       .create(
         <MemoryRouter>
-          <Header>
-            <AppLogo />
-            <nav className="navbar">
-              <ul id="navigation">
-                <MenuLink url="/rockets" pageName="Rockets" />
-                <MenuLink url="/missions" pageName="Missions" />
-                <MenuLink url="/my-profile" pageName="My Profile" />
-              </ul>
-            </nav>
-          </Header>
-          ,
+          <Header />
         </MemoryRouter>,
       )
       .toJSON();
@@ -31,16 +21,7 @@ describe('The Header component', () => {
   test("should render a '<nav>' element for the navigation menu with 3 link (<a>) elements", () => {
     const component = render(
       <MemoryRouter>
-        <Header>
-          <nav className="navbar">
-            <ul id="navigation">
-              <MenuLink url="/rockets" pageName="Rockets" />
-              <MenuLink url="/missions" pageName="Missions" />
-              <MenuLink url="/my-profile" pageName="My Profile" />
-            </ul>
-          </nav>
-        </Header>
-        ,
+        <Header />
       </MemoryRouter>,
     );
 
@@ -54,12 +35,7 @@ describe('The Header component', () => {
   test("should render an '<img>' element with the class 'logo-image'", () => {
     const component = render(
       <MemoryRouter>
-        <header>
-          <nav className="navbar">
-            <AppLogo />
-          </nav>
-        </header>
-        ,
+        <Header />
       </MemoryRouter>,
     );
 
