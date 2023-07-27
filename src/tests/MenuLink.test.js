@@ -16,7 +16,7 @@ describe('The MenuLink component', () => {
     expect(component).toMatchSnapshot();
   });
 
-  describe("should render a link element (<a>) with", () => {
+  describe('should render a link element (<a>) with', () => {
     test("the title 'Missions' and a link pointing to the Missions page", () => {
       const componentLink = render(
         <MemoryRouter>

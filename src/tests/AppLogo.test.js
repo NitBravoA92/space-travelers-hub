@@ -13,7 +13,7 @@ describe('The AppLogo component', () => {
 
   test('should display the text: Space Travelers\' Hub', () => {
     const component = render(<AppLogo />);
-    
+
     const expectedText = 'Space Travelers\' Hub';
 
     expect(component.container).toHaveTextContent(expectedText);

@@ -4,10 +4,10 @@ import renderer from 'react-test-renderer';
 import ReservationItem from '../components/ReservationItem';
 
 describe('The ReservationItem component', () => {
-  test("renders into the DOM", () => {
+  test('renders into the DOM', () => {
     const component = renderer
       .create(
-          <ReservationItem serviceName="Falcon 1" />
+        <ReservationItem serviceName="Falcon 1" />,
       ).toJSON();
     expect(component).toMatchSnapshot();
   });
@@ -19,5 +19,4 @@ describe('The ReservationItem component', () => {
 
     expect(liElement).toBeInTheDocument();
   });
-
 });

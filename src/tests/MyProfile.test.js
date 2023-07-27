@@ -1,15 +1,15 @@
-import "@testing-library/jest-dom/extend-expect";
+import '@testing-library/jest-dom/extend-expect';
 import { screen } from '@testing-library/react';
-import { MemoryRouter } from "react-router-dom";
-import MyProfile from "../views/MyProfile";
-import { renderWithProviders } from "../helpers/helper-for-test";
+import { MemoryRouter } from 'react-router-dom';
+import MyProfile from '../views/MyProfile';
+import renderWithProviders from '../helpers/helper-for-test';
 
-describe("The MyProfile component", () => {
-  test("renders correctly into the DOM", () => {
+describe('The MyProfile component', () => {
+  test('renders correctly into the DOM', () => {
     const { tree } = renderWithProviders(
       <MemoryRouter>
         <MyProfile />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     expect(tree).toMatchSnapshot();
@@ -19,11 +19,11 @@ describe("The MyProfile component", () => {
     renderWithProviders(
       <MemoryRouter>
         <MyProfile />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
-    const renderMyMissionsContainer = document.querySelector(".my-missions");
-    const renderMyRocketsContainer = document.querySelector(".my-rockets");
+    const renderMyMissionsContainer = document.querySelector('.my-missions');
+    const renderMyRocketsContainer = document.querySelector('.my-rockets');
     const myMissionsTitle = screen.getByText(/My Missions/i);
     const myRocketsTitle = screen.getByText(/My Rockets/i);
 
@@ -31,21 +31,19 @@ describe("The MyProfile component", () => {
     expect(renderMyRocketsContainer).toBeInTheDocument();
     expect(myMissionsTitle).toBeInTheDocument();
     expect(myRocketsTitle).toBeInTheDocument();
-
   });
 
-  test("should render the navigation menu with 3 links elements", () => {
+  test('should render the navigation menu with 3 links elements', () => {
     renderWithProviders(
       <MemoryRouter>
         <MyProfile />
       </MemoryRouter>,
     );
 
-    const navigationMenu = document.querySelector("nav");
-    const navLinks = document.querySelectorAll("nav ul li a");
+    const navigationMenu = document.querySelector('nav');
+    const navLinks = document.querySelectorAll('nav ul li a');
 
     expect(navigationMenu).toBeInTheDocument();
     expect(navLinks).toHaveLength(3);
   });
-
 });

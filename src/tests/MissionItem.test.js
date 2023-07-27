@@ -1,23 +1,23 @@
-import "@testing-library/jest-dom/extend-expect";
-import { screen } from "@testing-library/react";
-import MissionItem from "../components/MissionItem";
-import { renderWithProviders } from "../helpers/helper-for-test";
+import '@testing-library/jest-dom/extend-expect';
+import { screen } from '@testing-library/react';
+import MissionItem from '../components/MissionItem';
+import renderWithProviders from '../helpers/helper-for-test';
 
-describe("The MissionItem component", () => {
+describe('The MissionItem component', () => {
   const mockData = {
-    mission_id: "9D1B7E0",
-    mission_name: "Telstar 19V",
+    mission_id: '9D1B7E0',
+    mission_name: 'Telstar 19V',
     description:
-      "Thaicom is the name of a series of communications satellites operated from Thailand, and also the name of Thaicom Public Company Limited.",
+      'Thaicom is the name of a series of communications satellites operated from Thailand, and also the name of Thaicom Public Company Limited.',
   };
 
-  test("renders correctly into the DOM", () => {
+  test('renders correctly into the DOM', () => {
     const { tree } = renderWithProviders(
       <table>
         <tbody>
           <MissionItem mission={mockData} />
         </tbody>
-      </table>
+      </table>,
     );
     expect(tree).toMatchSnapshot();
   });
@@ -28,7 +28,7 @@ describe("The MissionItem component", () => {
         <tbody>
           <MissionItem mission={mockData} />
         </tbody>
-      </table>
+      </table>,
     );
 
     const missionTitle = screen.getByText(/Telstar 19V/i);
@@ -42,7 +42,7 @@ describe("The MissionItem component", () => {
         <tbody>
           <MissionItem mission={mockData} />
         </tbody>
-      </table>
+      </table>,
     );
 
     const grayBadge = screen.getByText(/Not a member/i);
@@ -58,10 +58,10 @@ describe("The MissionItem component", () => {
         <tbody>
           <MissionItem mission={mockData} />
         </tbody>
-      </table>
+      </table>,
     );
 
-    const joinButton = screen.getByRole("button", {
+    const joinButton = screen.getByRole('button', {
       name: /Join Mission/i,
     });
     const buttonClasses = joinButton.className;
@@ -69,5 +69,4 @@ describe("The MissionItem component", () => {
     expect(joinButton).toBeInTheDocument();
     expect(buttonClasses).toMatch(/btn btn-gray/i);
   });
-
 });

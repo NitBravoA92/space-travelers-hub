@@ -1,8 +1,8 @@
-import store from "../redux/store";
-import { getAllMissions } from "../redux/missions/missionsSlice";
+import store from '../redux/store';
+import { getAllMissions } from '../redux/missions/missionsSlice';
 
-describe("The Missions state", () => {
-  test("must be an object with an empty array initially", async () => {
+describe('The Missions state', () => {
+  test('must be an object with an empty array initially', async () => {
     const initState = await store.getState().missions;
 
     expect(initState).toEqual({ missions: [], isLoading: false, error: null });
@@ -12,7 +12,7 @@ describe("The Missions state", () => {
     const updateMissionsState = await store.dispatch(getAllMissions());
     const newState = await store.getState().missions;
 
-    expect(updateMissionsState.type).toEqual("missions/getAllMissions/fulfilled");
+    expect(updateMissionsState.type).toEqual('missions/getAllMissions/fulfilled');
     expect(newState.missions).toBeTruthy();
   });
 });

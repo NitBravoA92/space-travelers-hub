@@ -41,5 +41,4 @@ describe('The Header component', () => {
 
     expect(imgElement).toBeInTheDocument();
   });
-
 });

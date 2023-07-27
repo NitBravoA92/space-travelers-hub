@@ -1,12 +1,12 @@
-import "@testing-library/jest-dom/extend-expect";
-import { screen } from "@testing-library/react";
+import '@testing-library/jest-dom/extend-expect';
+import { screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import Rockets from '../views/Rockets';
-import { renderWithProviders } from "../helpers/helper-for-test";
+import renderWithProviders from '../helpers/helper-for-test';
 
-describe("The Rockets component", () => {
-  test("renders into the DOM correctly", () => {
-    const {tree } = renderWithProviders(
+describe('The Rockets component', () => {
+  test('renders into the DOM correctly', () => {
+    const { tree } = renderWithProviders(
       <MemoryRouter>
         <Rockets />
       </MemoryRouter>,
@@ -22,7 +22,7 @@ describe("The Rockets component", () => {
       </MemoryRouter>,
     );
 
-    const navigationMenu = document.querySelector("nav");
+    const navigationMenu = document.querySelector('nav');
     const rocketsLink = screen.getByText(/Rockets/i);
     const missionsLink = screen.getByText(/Missions/i);
     const myProfileLink = screen.getByText(/My Profile/i);
@@ -33,15 +33,14 @@ describe("The Rockets component", () => {
     expect(myProfileLink).toBeInTheDocument();
   });
 
-  test("renders the rockets main content", () => {
+  test('renders the rockets main content', () => {
     renderWithProviders(
       <MemoryRouter>
         <Rockets />
       </MemoryRouter>,
     );
 
-    const renderRocketsContent = document.querySelector(".rockets-list");
+    const renderRocketsContent = document.querySelector('.rockets-list');
     expect(renderRocketsContent).toBeInTheDocument();
   });
-
 });
