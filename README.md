@@ -175,6 +175,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - [x] **Display the list of Missions Joined in the My Profile view**
 - [x] **Display the list of Rockets reserved in the My Profile view**
 - [x] **Create Unit tests using Jest and React testing library**
+- [ ] **Deploy the final version of the project and share Link Demo in the documentation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
